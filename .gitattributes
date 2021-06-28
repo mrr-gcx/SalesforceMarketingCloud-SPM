@@ -1,1 +1,1 @@
-MarketingCloudSDK filter=lfs diff=lfs merge=lfs -text
+*/MarketingCloudSDK filter=lfs diff=lfs merge=lfs -text
