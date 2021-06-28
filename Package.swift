@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SalesForceMarketingCloudSDK",
+    name: "MarketingCloudSDK",
     products: [
         .library(
             name: "MarketingCloudSDK",
