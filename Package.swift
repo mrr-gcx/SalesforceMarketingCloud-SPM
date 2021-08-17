@@ -8,6 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "MarketingCloudSDK",
+            type: .dynamic,
             targets: ["MarketingCloudSDK", "MarketingCloudSDKBundle"]),
     ],
     dependencies: [
