@@ -13,11 +13,14 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .binaryTarget(name: "MarketingCloudSDK",
-                      path: "MarketingCloudSDK.xcframework"),
-        .target(name: "MarketingCloudSDKBundle",
-                dependencies: [],
-                path: "",
-                resources: [.copy("MarketingCloudSDK.bundle")])
+        .binaryTarget(
+            name: "MarketingCloudSDK",
+            path: "Sources/MarketingCloudSDK.xcframework"
+        ),
+        .target(
+            name: "MarketingCloudSDKBundle",
+            exclude: ["README.md", "MarketingCloudSDK.xcframework"],
+            resources: [.copy("MarketingCloudSDK.bundle")]
+        )
     ]
 )
